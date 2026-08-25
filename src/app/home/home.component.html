@@ -1,0 +1,25 @@
+<h1>home works!</h1>
+<div>
+    <p class="custom-button">Custom ViewEncapsulation!</p>
+    <hr />
+
+    <button (click)="simulateAsyncTask()">Simulate Async Task</button>
+    <p>Simulate Async Status: <strong>{{ status }}</strong></p>
+    <hr />
+
+    <p>Event triggered in parent cause change detection in child : <strong>{{ inputProperty }}</strong></p>
+    <button (click)="triggerChildEvent()">Trigger Child Event</button>
+    <hr />
+
+    <h3>ngAfterContentInit Hook</h3>
+    <ng-content></ng-content>
+    <hr />
+
+    <h3>ngAfterViewInit Hook</h3>
+    <div #myDiv>Some content</div>
+    <hr />
+</div>
+
+<div aria-hidden="true">
+    This content is visually hidden but accessible to assistive technologies.
+</div>
